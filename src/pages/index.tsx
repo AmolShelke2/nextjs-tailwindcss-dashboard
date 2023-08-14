@@ -1,11 +1,11 @@
-import { Barchart } from "@/components/Barchart";
-import { RecentSaved } from "@/components/RecentSaved";
-import { TopCards } from "@/components/TopCards";
+// import { Barchart } from "@/components/Barchart";
+// import { RecentSaved } from "@/components/RecentSaved";
+// import { TopCards } from "@/components/TopCards";
 
 export default function HomePage() {
   return (
     <div className="h-full">
-      <TopCards />
+      {/* <TopCards />
       <div className="grid grid-cols-1 gap-4 rounded-xl p-2 sm:m-4 md:grid-cols-3">
         <Barchart />
         <RecentSaved />
@@ -18,7 +18,7 @@ export default function HomePage() {
           similique optio impedit quisquam dicta maiores deserunt minima? Quasi,
           perferendis! Magni, voluptatibus similique!
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

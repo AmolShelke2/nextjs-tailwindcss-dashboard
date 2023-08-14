@@ -13,22 +13,24 @@ const style = {
   close: "lg:pl-4 lg:lg:w-[calc(100%-16rem)] transition-all duration-1000",
   mainContainer: "flex flex-col w-full h-screen pl-0 lg:space-y-4",
   container:
-    "bg-gray-100 h-screen overflow-hidden relative lg:p-4 transition-all duration-1000",
-  main: "h-screen overflow-auto pb-36 pt-8 px-2 md:pb-8 md:pt-4 lg:pt-0",
+    "bg-gray-100 h-screen overflow-hidden relative transition-all duration-1000 bg-white",
+  main: "h-screen overflow-auto pb-36 px-2 md:pb-8 lg:pt-0",
 };
 
 const Content = (props: ChildrenProps) => {
   const { sidebarOpen } = useDashboardContext();
   return (
-    <div className={style.container}>
-      <div className="flex items-start">
-        <Overlay />
-        <Sidebar mobileOrientation="end" />
-        <div
-          className={`${style.mainContainer} 
+    <div className="body">
+      <div className={style.container}>
+        <div className="flex items-start">
+          <Overlay />
+          <Sidebar mobileOrientation="end" />
+          <div
+            className={`${style.mainContainer} 
              ${sidebarOpen ? style.open : style.close}`}>
-          <TopBar />
-          <main className={style.main}>{props.children}</main>;
+            <TopBar />
+            <main className={style.main}>{props.children}</main>;
+          </div>
         </div>
       </div>
     </div>

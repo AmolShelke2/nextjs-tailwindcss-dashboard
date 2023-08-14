@@ -85,9 +85,10 @@ export const Barchart: React.FC = () => {
   return (
     <>
       <div
-        className=" w-full lg:col-span-2 relative h-[50vh] lg:h-[60vh]
+        className="w-full lg:col-span-2 relative h-[50vh] lg:h-[60vh]
       p-4 border rounded-lg bg-white">
-        <Bar data={chartData} options={chartOptions} className=" h-full" />
+        <h2 className="text-lg font-semibold">Revenue Update</h2>
+        <Bar data={chartData} options={chartOptions} className="h-full" />
       </div>
     </>
   );

@@ -17,11 +17,11 @@ export function TopBar() {
               <AiOutlineMenu
                 size={20}
                 onClick={toggleSidebar}
-                className="text-4xl text-gray-500 focus:outline-none cursor-pointer mr-3"
+                className="text-4xl text-[#2a3547] focus:outline-none cursor-pointer mr-3"
               />
               <AiOutlineSearch
                 size={20}
-                className="text-4xl text-gray-500 focus:outline-none cursor-pointer"
+                className="text-4xl text-[#2a3547] focus:outline-none cursor-pointer"
               />
             </div>
             <div className="group relative flex h-full items-center lg:w-[600px] ml-4">
@@ -39,13 +39,13 @@ export function TopBar() {
             <a href="#" className=" mr-4">
               <AiOutlineShoppingCart
                 size={25}
-                className="text-gray-500 focus:outline-none cursor-pointer"
+                className="text-[#2a3547] focus:outline-none cursor-pointer"
               />
             </a>
             <a href="#" className=" mr-4">
               <MdNotificationsActive
                 size={25}
-                className="text-gray-500 focus:outline-none cursor-pointer"
+                className="text-[#2a3547] focus:outline-none cursor-pointer"
               />
             </a>
             <a href="#" className="relative block">

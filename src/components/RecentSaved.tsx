@@ -4,8 +4,8 @@ import { users } from "@/constant/data";
 
 export const RecentSaved = () => {
   return (
-    <div className="w-full col-span-2 lg:col-span-1 bg-white p-4 rounded-lg lg:h-[60vh] h-[50vh] overflow-y-scroll mb-8">
-      <h2 className="text-lg font-thin capitalize">Recent users</h2>
+    <div className="w-full col-span-2 lg:col-span-1 bg-white rounded-lg lg:h-[60vh] h-[50vh] overflow-y-scroll mb-8 shadow p-6 border border-1">
+      <h2 className="text-lg font-semibold capitalize">Recent users</h2>
       <div className="flex flex-col justify-start items-start my-4 gap-4">
         {users.map((user) => (
           <div
@@ -23,12 +23,6 @@ export const RecentSaved = () => {
             <p className="text-sm text-gray-600 font-thin tracking-wider capitalize">
               {user.user_status}
             </p>
-
-            <div>
-              <p>
-                Joined date <br /> {user.login_date}
-              </p>
-            </div>
           </div>
         ))}
       </div>

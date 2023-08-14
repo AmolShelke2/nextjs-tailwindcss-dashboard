@@ -131,7 +131,7 @@ const ContentCard = ({ title }: any) => {
 
 export function Content(props: ContentProps) {
   return (
-    <div className="flex flex-col flex-wrap sm:flex-row">
+    <div className="flex flex-col flex-wrap sm:flex-row shadow xl:mx-44 lg:p-8">
       <div className="w-full sm:w-1/2 xl:w-1/3">
         <ContentCard title={props.title} />
         <ContentCard title={props.title} />

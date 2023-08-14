@@ -18,7 +18,9 @@ export function SidebarItems() {
           <Link href={item.link}>
             <span
               className={`${style.link} 
-              ${item.link === pathname && style.active} + hover:bg-[#5D87FF]`}>
+              ${
+                item.link === pathname ? style.active : ""
+              } hover:bg-[#5D87FF]`}>
               <span>{item.icon}</span>
               <span className={style.title}>{item.title}</span>
             </span>

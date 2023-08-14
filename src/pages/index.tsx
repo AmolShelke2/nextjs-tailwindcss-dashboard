@@ -7,7 +7,7 @@ export default function HomePage() {
     <div className="h-full w-full shadow">
       <div className="xl:mx-48">
         <TopCards />
-        <div className="grid grid-cols-1 gap-4 rounded-xl p-2 sm:m-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 rounded-xl p-2 sm:m-4 xl:grid-cols-3">
           <Barchart />
           <RecentSaved />
         </div>

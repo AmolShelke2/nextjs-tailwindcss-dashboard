@@ -29,7 +29,7 @@ const Content = (props: ChildrenProps) => {
             className={`${style.mainContainer} 
              ${sidebarOpen ? style.open : style.close}`}>
             <TopBar />
-            <main className={style.main}>{props.children}</main>;
+            <main className={style.main}>{props.children}</main>
           </div>
         </div>
       </div>

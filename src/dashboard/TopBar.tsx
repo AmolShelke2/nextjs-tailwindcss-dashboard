@@ -36,13 +36,13 @@ export function TopBar() {
             </div>
           </div>
           <div className="relative ml-5 flex w-1/4 items-center justify-end p-1 sm:right-auto sm:mr-0">
-            <a href="#" className=" mr-4">
+            <a href="#" className=" mr-6">
               <AiOutlineShoppingCart
                 size={25}
                 className="text-[#2a3547] focus:outline-none cursor-pointer"
               />
             </a>
-            <a href="#" className=" mr-4">
+            <a href="#" className=" mr-6">
               <MdNotificationsActive
                 size={25}
                 className="text-[#2a3547] focus:outline-none cursor-pointer"

@@ -17,7 +17,6 @@ const Context = React.createContext<ProviderValues>({});
 export function DashboardProvider({ children }: DashboardProviderProps) {
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
   const router = useRouter();
-  console.log(router);
 
   const toggleSidebar = React.useCallback(() => {
     setSidebarOpen((prevState) => !prevState);

@@ -17,7 +17,7 @@ export function TopBar() {
               <AiOutlineMenu
                 size={20}
                 onClick={toggleSidebar}
-                className="text-4xl text-[#2a3547] focus:outline-none cursor-pointer mr-5"
+                className="text-4xl text-[#2a3547] focus:outline-none cursor-pointer mr-7"
               />
               <AiOutlineSearch
                 size={20}
@@ -35,7 +35,7 @@ export function TopBar() {
               </ul>
             </div>
           </div>
-          <div className="relative ml-5 flex w-1/4 items-center justify-end p-1 sm:right-auto sm:mr-4">
+          <div className="relative ml-5 flex w-1/4 items-center justify-end p-1 sm:right-auto sm:mr-6">
             <a href="#" className="mr-6">
               <AiOutlineShoppingCart
                 size={25}

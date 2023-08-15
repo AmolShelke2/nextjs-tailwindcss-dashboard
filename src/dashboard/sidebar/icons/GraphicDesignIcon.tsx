@@ -1,6 +1,6 @@
 export function GraphicDesignIcon() {
   return (
-    <svg viewBox="0 0 512 512" fill="currentColor" className="h-6 w-6">
+    <svg viewBox="0 0 512 512" fill="currentColor" className=" h-3.5 w-3.5">
       <circle
         cx="295.099"
         cy="327.254"

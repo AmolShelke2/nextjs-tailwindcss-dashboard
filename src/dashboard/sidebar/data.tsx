@@ -16,6 +16,11 @@ export const data = [
     link: "/",
   },
   {
+    title: "my profile",
+    icon: <HomeIcon />,
+    link: "/admin/myprofile",
+  },
+  {
     title: "Projects",
     icon: <ProjectIcon />,
     link: "/admin/projects",

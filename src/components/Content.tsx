@@ -95,28 +95,28 @@ const ContentCard = ({ title }: any) => {
           <a href="#">
             <img
               className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-              src="/images/5.jpg"
+              src="/images/4.jpg"
               alt="Guy"
             />
           </a>
           <a href="#" className="">
             <img
               className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-              src="/images/6.jpg"
+              src="/images/4.jpg"
               alt="Max"
             />
           </a>
           <a href="#" className="">
             <img
               className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-              src="/images/7.jpg"
+              src="/images/4.jpg"
               alt="Charles"
             />
           </a>
           <a href="#" className="">
             <img
               className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-              src="/images/8.jpg"
+              src="/images/4.jpg"
               alt="Jade"
             />
           </a>

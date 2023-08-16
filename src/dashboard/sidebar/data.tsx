@@ -6,6 +6,7 @@ import { ProjectIcon } from "./icons/ProjectIcon";
 import { SettingsIcon } from "./icons/SettingsIcon";
 import { CalendarIcon } from "./icons/CalendarIcon";
 import { TimeManageIcon } from "./icons/TimeManageIcon";
+import { AiOutlineUser } from "react-icons/ai";
 
 import React from "react";
 
@@ -17,7 +18,7 @@ export const data = [
   },
   {
     title: "my profile",
-    icon: <HomeIcon />,
+    icon: <AiOutlineUser size={10} />,
     link: "/admin/myprofile",
   },
   {

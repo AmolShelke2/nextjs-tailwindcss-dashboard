@@ -8,11 +8,13 @@ interface FormData {
   gender: string;
 }
 
-interface PersonalInfoFormProps {
-  onNext: () => void;
+interface EducationDetailsFormProps {
+  onBack: () => void;
 }
 
-const PersonalInfoForm: React.FC<PersonalInfoFormProps> = ({ onNext }) => {
+const EducationDetailsForm: React.FC<EducationDetailsFormProps> = ({
+  onBack,
+}) => {
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -37,7 +39,7 @@ const PersonalInfoForm: React.FC<PersonalInfoFormProps> = ({ onNext }) => {
   return (
     <div className="h-full w-full py-10 relative">
       <form
-        className="flex justify-between items-start px-8 h-full"
+        className="flex justify-start gap-10 items-start px-8 h-full"
         onSubmit={handleSubmit}>
         <div className="flex flex-col w-[350px]">
           <label>Full Name</label>
@@ -80,33 +82,16 @@ const PersonalInfoForm: React.FC<PersonalInfoFormProps> = ({ onNext }) => {
           />
         </div>
 
-        <div className="flex flex-col w-[350px]">
-          <p className="mb-3">Gender</p>
-          <div className="flex flex-row items-center text-center">
-            <input
-              type="radio"
-              id="male"
-              name="gender"
-              value="male"
-              className="cursor-pointer mr-2"
-              onChange={handleInputChange}
-            />
-            <label className="mr-5">Male</label>
-            <input
-              type="radio"
-              id="female"
-              name="gender"
-              value="female"
-              className="cursor-pointer mr-2"
-              onChange={handleInputChange}
-            />
-            <label>Female</label>
-          </div>
-        </div>
         <button
           type="submit"
-          className="absolute bottom-0 right-10 bg-blue-500 text-white px-12 py-3 rounded-lg"
-          onClick={onNext}>
+          className="absolute bottom-0 left-10 bg-blue-500 text-white px-12 py-3 rounded-lg"
+          onClick={onBack}>
+          Back
+        </button>
+
+        <button
+          type="submit"
+          className="absolute bottom-0 right-10 bg-blue-500 text-white px-12 py-3 rounded-lg">
           Next
         </button>
       </form>
@@ -114,4 +99,4 @@ const PersonalInfoForm: React.FC<PersonalInfoFormProps> = ({ onNext }) => {
   );
 };
 
-export default PersonalInfoForm;
+export default EducationDetailsForm;

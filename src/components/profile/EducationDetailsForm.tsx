@@ -62,7 +62,7 @@ const EducationDetailsForm: React.FC<EducationDetailsFormProps> = ({
           />
         </div>
 
-        <div className="flex flex-col w-[350px]">
+        <div className="flex flex-col w-[350px] mb-8">
           <label>Phone Number</label>
           <input
             type="number"

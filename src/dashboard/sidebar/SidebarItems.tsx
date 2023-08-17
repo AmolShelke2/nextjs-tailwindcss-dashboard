@@ -45,10 +45,10 @@ export function SidebarItems() {
         <li key={subItem.title} className="list-disc">
           <Link href={subItem.link}>
             <h3
-              className={`flex items-center px-8 py-2 text-black text-[15px] hover:text-blue-500 capitalize ${
+              className={`flex items-center pl-10 py-2 text-black text-[12px] hover:text-blue-500 capitalize ${
                 subItem.link === pathname && style.active
               }`}>
-              <TbPointFilled className=" mr-4" size={15} />
+              <TbPointFilled className=" mr-2" size={15} />
               {subItem.title}
             </h3>
           </Link>

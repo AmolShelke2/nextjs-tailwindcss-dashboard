@@ -18,7 +18,7 @@ export const data = [
   },
   {
     title: "my profile",
-    icon: <AiOutlineUser size={10} />,
+    icon: <AiOutlineUser size={20} className="h-4 w-4" />,
     link: "/admin/myprofile",
   },
   {

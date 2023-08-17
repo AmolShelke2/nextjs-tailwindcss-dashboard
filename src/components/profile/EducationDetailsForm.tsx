@@ -1,11 +1,10 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 
 interface FormData {
-  fullName: string;
-  email: string;
-  phoneNumber: string;
-  dob: string;
-  gender: string;
+  college: string;
+  university: string;
+  course: string;
+  dateOfPassing: string;
 }
 
 interface EducationDetailsFormProps {
@@ -16,11 +15,10 @@ const EducationDetailsForm: React.FC<EducationDetailsFormProps> = ({
   onBack,
 }) => {
   const [formData, setFormData] = useState<FormData>({
-    fullName: "",
-    email: "",
-    phoneNumber: "",
-    dob: "",
-    gender: "",
+    college: "",
+    university: "",
+    course: "",
+    dateOfPassing: "",
   });
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -33,7 +31,7 @@ const EducationDetailsForm: React.FC<EducationDetailsFormProps> = ({
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    console.log("Form Data:", formData);
+    console.log("Education Data:", formData);
   };
 
   return (
@@ -42,40 +40,40 @@ const EducationDetailsForm: React.FC<EducationDetailsFormProps> = ({
         className="flex justify-start gap-10 items-start px-8 h-full"
         onSubmit={handleSubmit}>
         <div className="flex flex-col w-[350px]">
-          <label>Full Name</label>
+          <label>College</label>
           <input
             type="text"
-            name="fullName"
+            name="college"
             placeholder="Enter full name"
             required
             className="w-full mb-8 mt-4 border-gray-400 py-2 border focus:outline-none rounded-sm px-2"
             onChange={handleInputChange}
           />
-          <label>Email Address</label>
+          <label>Course</label>
           <input
-            type="email"
-            name="email"
-            placeholder="Enter email address"
-            className="w-full mb-8 mt-4 border-gray-400 py-2 border focus:outline-none rounded-sm px-2 capitalize"
+            type="text"
+            name="course"
+            placeholder="Enter Course name"
+            className="w-full mb-8 mt-4 border-gray-400 py-2 border focus:outline-none rounded-sm px-2"
             required
             onChange={handleInputChange}
           />
         </div>
 
         <div className="flex flex-col w-[350px] mb-8">
-          <label>Phone Number</label>
+          <label>University</label>
           <input
-            type="number"
-            name="phoneNumber"
+            type="text"
+            name="university"
             placeholder="Mobile Number"
             className="w-full mb-8 mt-4 border-gray-400 py-2 border focus:outline-none rounded-sm px-2"
             required
             onChange={handleInputChange}
           />
-          <label>DOB</label>
+          <label>Date of passing</label>
           <input
             type="date"
-            name="dob"
+            name="dateOfPassing"
             className="uppercase w-full mb-8 mt-4 border-gray-400 py-2 border focus:outline-none rounded-sm px-2"
             required
             onChange={handleInputChange}

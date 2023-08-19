@@ -7,13 +7,7 @@ interface FormData {
   dateOfPassing: string;
 }
 
-interface EducationDetailsFormProps {
-  onBack: () => void;
-}
-
-const EducationDetailsForm: React.FC<EducationDetailsFormProps> = ({
-  onBack,
-}) => {
+const EducationDetailsForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     college: "",
     university: "",
@@ -82,8 +76,7 @@ const EducationDetailsForm: React.FC<EducationDetailsFormProps> = ({
 
         <button
           type="submit"
-          className="absolute bottom-0 left-10 bg-blue-500 text-white px-12 py-3 rounded-lg"
-          onClick={onBack}>
+          className="absolute bottom-0 left-10 bg-blue-500 text-white px-12 py-3 rounded-lg">
           Back
         </button>
 

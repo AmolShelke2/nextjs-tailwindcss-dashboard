@@ -35,7 +35,7 @@ const PersonalInfoForm: React.FC = () => {
       {/* <!-- Contact Form --> */}
       <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
         <div className="border-b border-stroke py-4 px-6 dark:border-strokedark">
-          <h3 className="font-medium text-black">Contact Form</h3>
+          <h3 className="font-medium text-black">Personal Information</h3>
         </div>
         <form action="#">
           <div className="p-6">

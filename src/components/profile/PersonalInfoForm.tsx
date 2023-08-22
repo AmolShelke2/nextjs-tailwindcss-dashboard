@@ -64,6 +64,7 @@ const PersonalInfoForm: React.FC = () => {
                   name="first_name"
                   value={formData.first_name}
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+                  required
                 />
               </div>
 
@@ -76,6 +77,7 @@ const PersonalInfoForm: React.FC = () => {
                   value={formData.last_name}
                   placeholder="Enter your last name"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+                  required
                 />
               </div>
             </div>
@@ -92,6 +94,7 @@ const PersonalInfoForm: React.FC = () => {
                   value={formData.email}
                   name="email"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+                  required
                 />
               </div>
 
@@ -106,6 +109,7 @@ const PersonalInfoForm: React.FC = () => {
                   name="phone_number"
                   placeholder="Enter your phone number"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+                  required
                 />
               </div>
             </div>
@@ -118,6 +122,7 @@ const PersonalInfoForm: React.FC = () => {
                 type="password"
                 onChange={handleInputChange}
                 value={formData.password}
+                required
                 name="password"
                 placeholder="Password or otp"
                 className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
@@ -127,7 +132,9 @@ const PersonalInfoForm: React.FC = () => {
             <div className="mb-4">
               <label className="mb-2 block text-black">Studying in</label>
               <div className="relative z-20 bg-transparent">
-                <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
+                <select
+                  required
+                  className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
                   <option value="">Currently studying in</option>
                   <option value="">UG</option>
                   <option value="">PG</option>
@@ -160,7 +167,9 @@ const PersonalInfoForm: React.FC = () => {
                 Educational Interest
               </label>
               <div className="relative z-20 bg-transparent dark:bg-form-input">
-                <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
+                <select
+                  required
+                  className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
                   <option value="">Type your education interest</option>
                   <option value="">Engineering & arch</option>
                   <option value="">Managment (MBA,BBA)</option>
@@ -203,6 +212,7 @@ const PersonalInfoForm: React.FC = () => {
                 <label className="mb-2 block text-black">Current city</label>
                 <input
                   type="text"
+                  required
                   onChange={handleInputChange}
                   value={formData.current_city}
                   name="current_city"
@@ -219,6 +229,7 @@ const PersonalInfoForm: React.FC = () => {
                   type="text"
                   onChange={handleInputChange}
                   value={formData.interested_course}
+                  required
                   name="interested_course"
                   placeholder="Enter Interested course"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
@@ -231,7 +242,9 @@ const PersonalInfoForm: React.FC = () => {
                 Future study location
               </label>
               <div className="relative z-20 bg-transparent dark:bg-form-input">
-                <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
+                <select
+                  required
+                  className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
                   <option value="">States</option>
                   <option value="">Karnataka</option>
                   <option value="">Maharastra</option>
@@ -260,6 +273,7 @@ const PersonalInfoForm: React.FC = () => {
             <div className="mb-6">
               <label className="mb-2 block text-black">Message</label>
               <textarea
+                required
                 rows={6}
                 placeholder="Type your message"
                 className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary 

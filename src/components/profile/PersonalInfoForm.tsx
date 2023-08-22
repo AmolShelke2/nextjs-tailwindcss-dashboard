@@ -1,20 +1,32 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 
 interface FormData {
-  fullName: string;
+  first_name: string;
+  last_name: string;
   email: string;
-  phoneNumber: string;
-  dob: string;
-  gender: string;
+  phone_number: string;
+  password: string;
+  studying_in: string;
+  educational_interest: string;
+  current_city: string;
+  interested_course: string;
+  future_study_location: string;
+  message: string;
 }
 
 const PersonalInfoForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
-    fullName: "",
+    first_name: "",
+    last_name: "",
     email: "",
-    phoneNumber: "",
-    dob: "",
-    gender: "",
+    phone_number: "",
+    password: "",
+    studying_in: "",
+    educational_interest: "",
+    current_city: "",
+    interested_course: "",
+    future_study_location: "",
+    message: "",
   });
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -28,6 +40,9 @@ const PersonalInfoForm: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     console.log("Form Data:", formData);
+    alert(
+      "Successfully logged in " + formData.first_name + " " + formData.last_name
+    );
   };
 
   return (
@@ -37,7 +52,7 @@ const PersonalInfoForm: React.FC = () => {
         <div className="border-b border-stroke py-4 px-6 dark:border-strokedark">
           <h3 className="font-medium text-black">Personal Information</h3>
         </div>
-        <form action="#">
+        <form action="#" onSubmit={handleSubmit}>
           <div className="p-6">
             <div className="mb-4 flex flex-col gap-6 xl:flex-row">
               <div className="w-full xl:w-1/2">
@@ -45,6 +60,9 @@ const PersonalInfoForm: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Enter your first name"
+                  onChange={handleInputChange}
+                  name="first_name"
+                  value={formData.first_name}
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                 />
               </div>
@@ -53,6 +71,9 @@ const PersonalInfoForm: React.FC = () => {
                 <label className="mb-2 block text-black">Last name</label>
                 <input
                   type="text"
+                  name="last_name"
+                  onChange={handleInputChange}
+                  value={formData.last_name}
                   placeholder="Enter your last name"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                 />
@@ -67,6 +88,9 @@ const PersonalInfoForm: React.FC = () => {
                 <input
                   type="email"
                   placeholder="Enter your email address"
+                  onChange={handleInputChange}
+                  value={formData.email}
+                  name="email"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                 />
               </div>
@@ -77,6 +101,9 @@ const PersonalInfoForm: React.FC = () => {
                 </label>
                 <input
                   type="number"
+                  onChange={handleInputChange}
+                  value={formData.phone_number}
+                  name="phone_number"
                   placeholder="Enter your phone number"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                 />
@@ -89,6 +116,9 @@ const PersonalInfoForm: React.FC = () => {
               </label>
               <input
                 type="password"
+                onChange={handleInputChange}
+                value={formData.password}
+                name="password"
                 placeholder="Password or otp"
                 className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
               />
@@ -173,6 +203,9 @@ const PersonalInfoForm: React.FC = () => {
                 <label className="mb-2 block text-black">Current city</label>
                 <input
                   type="text"
+                  onChange={handleInputChange}
+                  value={formData.current_city}
+                  name="current_city"
                   placeholder="Enter current city"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                 />
@@ -184,6 +217,9 @@ const PersonalInfoForm: React.FC = () => {
                 </label>
                 <input
                   type="text"
+                  onChange={handleInputChange}
+                  value={formData.interested_course}
+                  name="interested_course"
                   placeholder="Enter Interested course"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                 />

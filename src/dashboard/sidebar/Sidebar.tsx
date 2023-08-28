@@ -12,12 +12,11 @@ const style = {
     start: "left-0",
     end: "right-0",
   },
-  container:
-    "pb-32 lg:pb-6 transition-all duration-1000 border-r-1 border-slate-50 ",
+  container: "pb-32 lg:pb-6 transition-all duration-1000",
   close: "hidden lg:block lg:w-64 lg:z-auto transition-all duration-1000",
   open: "w-8/12 absolute z-40 sm:w-5/12 lg:hidden transition-all duration-1000",
   default:
-    "bg-white h-screen overflow-y-auto top-0 lg:relative border-r-1 border-slate-50",
+    "bg-white h-screen overflow-y-auto top-0 lg:relative border-r-2 border-stroke",
 };
 
 export function Sidebar(props: SidebarProps) {

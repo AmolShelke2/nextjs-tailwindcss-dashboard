@@ -1,6 +1,6 @@
 export default function ProfilePage() {
   return (
-    <div className="overflow-hidden rounded-sm bg-white shadow-default">
+    <div className="overflow-hidden rounded-sm bg-white shadow-lg mx-20">
       <div className="relative z-20 h-35 lg:h-65">
         <img
           src={"/images/cover-01.png"}

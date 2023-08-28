@@ -5,7 +5,7 @@ interface ContentProps {
 const ContentCard = ({ title }: any) => {
   return (
     <div className="m-4">
-      <div className="w-full rounded-2xl bg-white p-4 shadow-lg">
+      <div className="w-full rounded-2xl bg-gray-400 p-4 shadow-lg">
         <div className="mb-6 flex items-center justify-between">
           <div className="flex items-center">
             <span className="relative rounded-xl bg-blue-100 p-2">

@@ -5,7 +5,7 @@ import PersonalInfoForm from "./PersonalInfoForm";
 
 const SignupForm = () => {
   return (
-    <section className="h-full w-full border-gray-200 border bg-white rounded-xl">
+    <section className="h-full w-full  bg-white rounded-xl">
       <PersonalInfoForm />
     </section>
   );

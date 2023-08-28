@@ -27,6 +27,11 @@ export const data = [
     link: "/admin/projects",
   },
   {
+    title: "profile",
+    icon: <AiOutlineUser size={20} className="h-4 w-4" />,
+    link: "/admin/profile",
+  },
+  {
     title: "My tasks",
     icon: <TaskIcon />,
     link: "/admin/tasks",

@@ -1,1 +1,1 @@
-# Collegementor Dashboard
+# nextjs-tailwindcss-dashboard
